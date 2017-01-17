@@ -16,6 +16,15 @@ a:hover{
 	background: #fff;
 	padding: 20px;
 }
+.header{
+	width:970px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 20px;
+}
+.main h1{
+	text-align: center;
+}
 .projectOne{
 	display: inline-block;
 	width: 300px;
@@ -23,10 +32,10 @@ a:hover{
 	vertical-align: top;
 }
 .prjDescription{
-	
 	font-weight: bold;
 	margin-bottom: 10px;
-	font-size: 20px;
+	font-size: 18px;
+	/*color: #1FB4C2;*/
 }
 .prjImg{
 	height: 200px;
@@ -40,4 +49,8 @@ a:hover{
 .prjLink{
 	font-style: italic;
 	margin-bottom: 10px;
+}
+.prjMyJob ul{
+	padding-left: 25px;
+	margin-top: 3px;
 }
