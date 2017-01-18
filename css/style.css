@@ -6,6 +6,8 @@ body{
 	background: url(../images/footer_lodyas.png);
 	color:#0A0B14;
 	font-family: 'PT Sans', sans-serif;
+	margin: 0;
+	padding: 0;
 }
 a{
 	color:#1FB4C2;
