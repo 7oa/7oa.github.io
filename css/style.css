@@ -1,3 +1,7 @@
+html{
+	padding: 0;
+	margin: 0;
+}
 body{
 	background: url(../images/footer_lodyas.png);
 	color:#0A0B14;
@@ -21,6 +25,41 @@ a:hover{
 	margin: 0 auto;
 	background: #fff;
 	padding: 20px;
+	height: 30px;
+	position: relative;
+}
+.header ul{
+	position: absolute;
+	bottom: 0;
+	left: 30px;
+	margin: 0;
+	padding: 0;
+	border-left: 1px solid #ccc;
+}
+.header ul li{
+	float: left;
+	list-style: none;
+}
+.header ul li a{
+	display: block;
+	padding: 0 40px;
+	border-right: 1px solid #ccc;
+	height: 70px;
+	line-height: 70px;
+}
+.header ul li a:hover{
+	text-decoration: none;
+	color:#fff;
+	background: #1FB4C2;
+}
+.contacts{
+	position: absolute;
+	top:7px;
+	right: 30px;
+	font-style: italic;
+	text-align: right;
+	font-size: 18px;
+	line-height: 27px;
 }
 .main h1{
 	text-align: center;
