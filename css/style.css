@@ -52,6 +52,11 @@ a:hover{
 	line-height: 70px;
 	transition: .8s;
 }
+.header ul li a.select{
+	text-decoration: none;
+	color:#fff;
+	background: #1FB4C2;
+}
 .header ul li a:hover{
 	text-decoration: none;
 	color:#fff;
@@ -77,7 +82,7 @@ a:hover{
 }
 .prjDescription{
 	font-weight: bold;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	font-size: 18px;
 	color: #373737;
 }
@@ -93,6 +98,11 @@ a:hover{
 }
 .prjImg img{
 	max-width: 100%;
+}
+.prjDate{
+	font-size: 10px;
+	color: #999;
+	margin-bottom: 10px;
 }
 .prjLink{
 	font-style: italic;
