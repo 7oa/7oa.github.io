@@ -1,0 +1,83 @@
+ <!-- Portfolio Modals -->
+ {% for post in site.categories.projects %}
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{forloop.index}}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h3>{{ post.title }}</h3>
+                            <hr class="star-primary">
+                            <ul class="list-inline item-details">
+                                {% if post.pgdate %}
+                                <li><strong>Дата:</strong>
+                                    {{ post.pgdate }}
+                                </li>
+                                {% endif %}
+                                {% if post.link %}
+                                <li><strong>Ссылка:</strong>
+                                    {{ post.link }}
+                                </li>
+                                {% endif %}
+                                {% if post.git %}
+                                <li><strong>Git:</strong>
+                                    <a href="https://{{ post.git }}" target="_blank">{{ post.git }}</a>
+                                </li>
+                                {% endif %}
+                            </ul>
+                            <div class="my-job">
+                                <h4>Моя работа:</h4>
+                                {% if post.content %}
+                                    {{ post.content }}
+                                {% endif %}
+                            </div>
+                                {% if post.detail-img != null %}
+                                    <div class="detail-scr detail-slider">
+                                        {% for img in post.detail-img %}
+                                        <div>
+                                            <img src="img/{{ img.url }}" class="img-responsive img-centered img-thumbnail">
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    <div class="detail-scr">
+                                        <img src="img/screen/{{ post.img }}" class="img-responsive img-centered img-thumbnail">
+                                    </div>
+                                {% endif %}
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Закрыть</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+ <!-- Sertificates Modals -->
+{% for sert in site.sertificates %}
+ <div class="portfolio-modal modal fade" id="sertificatesModal-{{forloop.index}}" tabindex="-1" role="dialog" aria-hidden="true">
+     <div class="modal-content">
+         <div class="close-modal" data-dismiss="modal">
+             <div class="lr">
+                 <div class="rl">
+                 </div>
+             </div>
+         </div>
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-8 col-lg-offset-2">
+                     <div class="modal-body">
+                         <img src="img/sert/{{ sert.url }}" class="img-responsive img-centered img-thumbnail">
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+{% endfor %}

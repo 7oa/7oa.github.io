@@ -1,0 +1,28 @@
+ <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2>Сертификаты</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="sertificates">
+                        {% for sert in site.sertificates %}
+                        <div class="sertificates-slide">
+                            <a href="#sertificatesModal-{{forloop.index}}" data-toggle="modal"  class="sertificates-item" style="background-image:url('img/sert/{{ sert.url }}')">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
