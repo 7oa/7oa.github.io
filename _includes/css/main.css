@@ -506,6 +506,12 @@ footer .footer-below {
     display: block;
     position: relative;
 }
+@media(max-width:1199px) {
+    .sertificates-item{
+        width: 200px;
+        height: 280px;
+    }
+}
 
 .sertificates-slide:focus{
     outline: none;
