@@ -182,6 +182,11 @@ section h2 {
     margin: 0;
     font-size: 3em;
 }
+@media(max-width:425px) {
+    section h2 {
+        font-size: 2em;
+    }
+}
 
 section.success {
     color: #fff;
