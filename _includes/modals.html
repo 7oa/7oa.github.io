@@ -41,13 +41,13 @@
                                     <div class="detail-scr detail-slider">
                                         {% for img in post.detail-img %}
                                         <div>
-                                            <img src="img/{{ img.url }}" class="img-responsive img-centered img-thumbnail">
+                                            <img data-src="img/{{ img.url }}" class="img-responsive img-centered img-thumbnail lazy">
                                         </div>
                                         {% endfor %}
                                     </div>
                                 {% else %}
                                     <div class="detail-scr">
-                                        <img src="img/screen/{{ post.img }}" class="img-responsive img-centered img-thumbnail">
+                                        <img data-src="img/screen/{{ post.img }}" class="img-responsive img-centered img-thumbnail lazy">
                                     </div>
                                 {% endif %}
 
@@ -73,7 +73,7 @@
              <div class="row">
                  <div class="col-lg-8 col-lg-offset-2">
                      <div class="modal-body">
-                         <img src="img/sert/{{ sert.url }}" class="img-responsive img-centered img-thumbnail">
+                         <img data-src="img/sert/{{ sert.url }}" class="img-responsive img-centered img-thumbnail lazy">
                      </div>
                  </div>
              </div>

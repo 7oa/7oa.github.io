@@ -76,3 +76,7 @@ $('.detail-slider').slick({
 $('.modal').on('show.bs.modal', function (e) {
     $('.detail-slider').slick('setPosition');
 });
+
+var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy"
+});
