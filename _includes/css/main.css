@@ -622,3 +622,6 @@ transition: all ease .5s;
     position: absolute;
     top: 0;
 }
+.about strong{
+    color: lightgoldenrodyellow;
+}
