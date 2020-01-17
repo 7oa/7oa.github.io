@@ -2,7 +2,7 @@
 title: Anna Semenova
 email: semenova.7oa@yandex.ru
 url: https://7oa.github.io
-tel: 8 962 6609923
+tel: 8 958 5881204
 description: "Верстка создание сайтов"
 keywords: "битрикс, разработка сайтов, создание сайтов, верстка, программирование, html, css, scss, pug, gulp, jquery"
 skills: ""
@@ -17,7 +17,6 @@ sertificates:
   - url: bx-adm-mod.jpg
   - url: bx-framework.jpg
   - url: bx-kompozit.jpg
-
 
 # Google webmaster tools
 google_verify:
